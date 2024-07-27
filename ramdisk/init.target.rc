@@ -4,6 +4,14 @@ on init
 on boot
     stop ril-daemon
 
+# Bluetooth Audio (AVRCP)
+    chown system system /sys/class/input/input12/enabled
+    chmod 0660 /sys/class/input/input12/enabled
+
+# Bluetooth Keyboard
+    chown system radio /sys/class/input/input11/enabled
+    chmod 0660 /sys/class/input/input11/enabled
+
 # Headphones (Headset)
     chown system system /sys/class/input/input10/enabled
     chmod 0660 /sys/class/input/input10/enabled
