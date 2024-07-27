@@ -69,6 +69,9 @@
 # Secure MEM driver
 /dev/s5p-smem             0660   system     drmrpc
 
+# vfs
+/dev/vfsspi               0660   system     system
+
 # USB Driver
 /dev/ttyUSB*              0660   system     usb
 /dev/usb/lp*              0660   system     usb
