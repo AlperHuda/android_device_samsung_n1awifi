@@ -11,12 +11,13 @@ $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
 PRODUCT_NAME := lineage_n1awifi
 PRODUCT_DEVICE := n1awifi
+PRODUCT_MANUFACTURER := samsung
+PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_MODEL=SM-P600 \
     PRODUCT_NAME=n1awifi \
     PRODUCT_DEVICE=n1awifi \
-    PRIVATE_BUILD_DESC="samsung/lt03wifixx-user/lt03wifixx-user:5.1.1/LMY47X/P600XXSDRI1:user/release-keys" \
-    TARGET_DEVICE=n1awifi
-
-BUILD_FINGERPRINT := samsung/lt03wifixx/lt03wifi:5.1.1/LMY47X/P600XXSDRI1:user/release-keys
+    TARGET_DEVICE=n1awifi \
+    BUILD_FINGERPRINT="samsung/lt03wifixx/lt03wifi:5.1.1/LMY47X/P600XXSDRI1:user/release-keys" \
+    PRIVATE_BUILD_DESC="lt03wifixx-user 5.1.1 LMY47X P600XXSDRI1 release-keys"
